@@ -1,0 +1,19 @@
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blueviolet;
+    background-color: burlywood;
+    padding: 50px;
+    width: 25%;
+}
+p{
+    
+    font-family: 'Qahiri', sans-serif;
+}
+
+p span {
+
+    font-weight:bolder;
+    font-style: italic;
+}
+
+
