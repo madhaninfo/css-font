@@ -1,43 +1,24 @@
-import React from 'react';
-import './App.css'
-import Form from "./Components/Form";
-import Signup from './Components/Signup';
-// import Usestate from './Usestate';
-// import IconButton from "@material-ui/core/IconButton";
-// import InputLabel from "@material-ui/core/InputLabel";
-// import Visibility from "@material-ui/icons/Visibility";
-// import InputAdornment from "@material-ui/core/InputAdornment";
-// import VisibilityOff from "@material-ui/icons/VisibilityOff";
-// import Input from "@material-ui/core/Input";
-// import Usestate from './Components/Usestate';
-
-
-function App() {
-  // const App1= () => {
-  //       const [values, setValues] = React.useState({
-  //           password: "",
-  //           showPassword: false,
-  //       });
+import {  useRef } from "react";
+            function App() {
+                // const [inputValue, setInputValue] = useState("");
+                const InputElement= useRef();
+              
+                const focusInput=() => {
+              InputElement.current.focus();
+                };
+              
+                return (
+                  <>
+                    {/* <input
+                      type="text" ref={InputElement}/> */}
+                     <button onClick={focusInput}>focus</button>
+                  
+                    {/* <h1>Render Count: {count.current}</h1> */}
+                  </>
+                );
+              }
         
-  //       const handleClickShowPassword = () => {
-  //           setValues({ ...values, showPassword: !values.showPassword });
-  //       };
-        
-  //       const handleMouseDownPassword = (event) => {
-  //           event.preventDefault();
-  //       };
-        
-  //       const handlePasswordChange = (prop) => (event) => {
-  //           setValues({ ...values, [prop]: event.target.value });
-  //       };
-  return (
-   <div>
-      <Form />
-    <Signup/>
-    </div>
-  );
-}
-
-
+    
+    
 
 export default App;
