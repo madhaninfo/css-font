@@ -1,24 +1,25 @@
-import {  useRef } from "react";
-            function App() {
-                // const [inputValue, setInputValue] = useState("");
-                const InputElement= useRef();
-              
-                const focusInput=() => {
-              InputElement.current.focus();
-                };
-              
-                return (
-                  <>
-                    {/* <input
-                      type="text" ref={InputElement}/> */}
-                     <button onClick={focusInput}>focus</button>
-                  
-                    {/* <h1>Render Count: {count.current}</h1> */}
-                  </>
-                );
-              }
-        
-    
-    
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          <h3>tamilanda</h3><code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+}
 
 export default App;
